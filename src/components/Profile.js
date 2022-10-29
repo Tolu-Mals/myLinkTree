@@ -11,7 +11,7 @@ const OptionsButton = (
 
 const Profile = () => {
   return (
-    <chakra.header>
+    <chakra.header mb={{ base: "16px", md: "32px" }}>
       { OptionsButton }
 
       <Box boxSize="88px" mx="auto" mb={6}>

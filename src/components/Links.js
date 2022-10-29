@@ -44,7 +44,15 @@ const buttonLinks = linkConfigs.map(config => {
   const { id, url, text, title } = config;
 
   return (
-    <Button id={ id ? id: null } as="a" title={ title ? title : null } href={url}>
+    <Button 
+    id={ id ? id: null } 
+    as="a" 
+    title={ title ? title : null } 
+    href={url}
+    variant="solid"
+    aria-label={text}
+    key={id}
+    >
       { text }
     </Button>
   )
@@ -53,7 +61,7 @@ const buttonLinks = linkConfigs.map(config => {
 const Links = () => {
   return (
     <chakra.main>
-      <Stack>
+      <Stack spacing="24px" py="24px">
       { buttonLinks }
       </Stack>
     </chakra.main>
