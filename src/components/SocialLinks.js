@@ -5,7 +5,7 @@ import SlackLogo from '../assets/logo/slack-logo.png';
 
 const SocialLinks = () => {
   return (
-    <Flex justifyContent={"center"} gap="24px">
+    <Flex justifyContent={"center"} gap="24px" py="24px" mb="32px">
       <img src={GithubLogo} alt="Github logo"/>
       <img src={SlackLogo} alt="Slack logo" />
     </Flex>

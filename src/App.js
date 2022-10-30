@@ -3,6 +3,7 @@ import { Container } from '@chakra-ui/react';
 import Profile from './components/Profile';
 import Links from './components/Links';
 import SocialLinks from './components/SocialLinks';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Profile />
       <Links />
       <SocialLinks />
+      <Footer />
     </Container>
   );
 }
