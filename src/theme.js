@@ -20,6 +20,11 @@ const components = {
           }
         }
       }
+  },
+  FormLabel: {
+    baseStyle: {
+      fontSize: "14px",
+    }
   }
 }
 
