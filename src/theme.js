@@ -18,6 +18,13 @@ const components = {
           _active: {
             backgroundColor: 'gray.300'
           }
+        },
+        action: {
+          backgroundColor: 'primary.600',
+          color: '#fff',
+          fontWeight: 600,
+          height: 12,
+          borderRadius: '8px',
         }
       }
   },
@@ -36,8 +43,12 @@ const fonts = {
 const colors = {
   gray: {
     900: '#101828',
+    600: '#475467',
     300: '#D0D5DD',
     200: '#eaecf0',
+  },
+  primary: {
+    600: '#1570EF',
   }
 }
 
