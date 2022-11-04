@@ -25,7 +25,7 @@ const components = {
     baseStyle: {
       fontSize: "14px",
     }
-  }
+  },
 }
 
 const fonts = {

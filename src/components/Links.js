@@ -38,6 +38,12 @@ const linkConfigs = [
     text: 'Get our FREE design book',
     title: 'Grow your design skills using our book',
   },
+  {
+    id: 'contact',
+    url: '/contact',
+    text: 'Contact Me',
+    title: 'Reach out to Tolulope'
+  }
 ];
 
 const buttonLinks = linkConfigs.map(config => {
