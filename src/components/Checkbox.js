@@ -2,6 +2,10 @@ import React, { useId, useState } from 'react';
 import { chakra, Flex } from '@chakra-ui/react';
 import checkIcon from '../assets/icons/check-icon.png';
 
+//A custom checkbox component that follows the UI specified
+//in the Task 2 Figma file, since it's difficult to modify that
+//of Chakra UI to match the UI since design
+
 const Checkbox = ({ children, spacing="16px", ...rest }) => {
   const id = useId();
   const [isChecked, setIsChecked] = useState(false);
@@ -48,7 +52,7 @@ const Checkbox = ({ children, spacing="16px", ...rest }) => {
   return (
     <Flex {...rest}>
       <chakra.div role="checkbox" sx={checkboxStyle} id={`checkbox-${id}`} onClick={handleClick} mr={spacing} tabIndex={"0"}></chakra.div>
-      <label>{ children }</label>
+      <label htmlFor={`checkbox-${id}`}>{ children }</label>
     </Flex>
   )
 }
